@@ -1,0 +1,3 @@
+display_name: "Returns Analysis"
+short_description: "Codex adapter skill for returns-analysis."
+default_prompt: "Use the returns-analysis workflow."

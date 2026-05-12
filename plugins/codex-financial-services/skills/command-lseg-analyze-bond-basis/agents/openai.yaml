@@ -1,0 +1,3 @@
+display_name: "Command Lseg Analyze Bond Basis"
+short_description: "Codex adapter for Claude slash command /analyze-bond-basis from lseg. Use when the user types /analyze-bond-basis or ..."
+default_prompt: "Use the command-lseg-analyze-bond-basis workflow."

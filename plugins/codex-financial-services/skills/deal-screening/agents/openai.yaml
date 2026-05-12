@@ -1,0 +1,3 @@
+display_name: "Deal Screening"
+short_description: "Codex adapter skill for deal-screening."
+default_prompt: "Use the deal-screening workflow."

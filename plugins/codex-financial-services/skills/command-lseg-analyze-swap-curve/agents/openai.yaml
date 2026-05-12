@@ -1,0 +1,3 @@
+display_name: "Command Lseg Analyze Swap Curve"
+short_description: "Codex adapter for Claude slash command /analyze-swap-curve from lseg. Use when the user types /analyze-swap-curve or ..."
+default_prompt: "Use the command-lseg-analyze-swap-curve workflow."

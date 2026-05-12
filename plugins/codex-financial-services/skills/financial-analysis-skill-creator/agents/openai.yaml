@@ -1,0 +1,3 @@
+display_name: "Financial Analysis Skill Creator"
+short_description: "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an ex..."
+default_prompt: "Use the financial-analysis-skill-creator workflow."

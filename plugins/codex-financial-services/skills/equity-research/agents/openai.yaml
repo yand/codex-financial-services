@@ -1,0 +1,3 @@
+display_name: "Equity Research"
+short_description: "Generate comprehensive equity research snapshots combining analyst consensus estimates, company fundamentals, histori..."
+default_prompt: "Use the equity-research workflow."

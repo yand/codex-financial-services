@@ -1,0 +1,3 @@
+display_name: "Lbo Model"
+short_description: "This skill should be used when completing LBO (Leveraged Buyout) model templates in Excel for private equity transact..."
+default_prompt: "Use the lbo-model workflow."

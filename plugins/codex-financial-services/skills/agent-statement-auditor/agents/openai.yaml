@@ -1,0 +1,3 @@
+display_name: "Agent Statement Auditor"
+short_description: "Codex adapter for the Claude Cowork statement-auditor agent. Audits a batch of pre-generated LP capital-account state..."
+default_prompt: "Use the agent-statement-auditor workflow."

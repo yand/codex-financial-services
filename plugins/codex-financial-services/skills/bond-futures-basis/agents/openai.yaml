@@ -1,0 +1,3 @@
+display_name: "Bond Futures Basis"
+short_description: "Analyze the bond futures basis by pricing futures, identifying the cheapest-to-deliver, and comparing with yield curv..."
+default_prompt: "Use the bond-futures-basis workflow."

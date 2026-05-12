@@ -1,0 +1,20 @@
+{
+  "name": "codex-financial-services",
+  "interface": {
+    "displayName": "Codex Financial Services"
+  },
+  "plugins": [
+    {
+      "name": "codex-financial-services",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-financial-services"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

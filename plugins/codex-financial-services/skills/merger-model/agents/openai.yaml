@@ -1,0 +1,3 @@
+display_name: "Merger Model"
+short_description: "Codex adapter skill for merger-model."
+default_prompt: "Use the merger-model workflow."

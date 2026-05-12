@@ -1,0 +1,3 @@
+display_name: "Command Lseg Analyze Fx Carry"
+short_description: "Codex adapter for Claude slash command /analyze-fx-carry from lseg. Use when the user types /analyze-fx-carry or asks..."
+default_prompt: "Use the command-lseg-analyze-fx-carry workflow."

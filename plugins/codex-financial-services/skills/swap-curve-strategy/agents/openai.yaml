@@ -1,0 +1,3 @@
+display_name: "Swap Curve Strategy"
+short_description: "Analyze the interest rate swap curve by pricing swaps at multiple tenors, overlaying government and inflation curves,..."
+default_prompt: "Use the swap-curve-strategy workflow."

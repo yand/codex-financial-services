@@ -1,0 +1,3 @@
+display_name: "Command Investment Banking One Pager"
+short_description: "Codex adapter for Claude slash command /one-pager from investment-banking. Use when the user types /one-pager or asks..."
+default_prompt: "Use the command-investment-banking-one-pager workflow."

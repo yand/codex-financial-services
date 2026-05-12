@@ -1,0 +1,3 @@
+display_name: "Ppt Template Creator"
+short_description: "Creates self-contained PPT template SKILLS (not presentations) from user-provided PowerPoint templates. Use ONLY when..."
+default_prompt: "Use the ppt-template-creator workflow."

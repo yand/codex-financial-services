@@ -1,0 +1,3 @@
+display_name: "Catalyst Calendar"
+short_description: "Codex adapter skill for catalyst-calendar."
+default_prompt: "Use the catalyst-calendar workflow."

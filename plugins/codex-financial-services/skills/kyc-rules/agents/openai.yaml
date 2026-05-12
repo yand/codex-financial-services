@@ -1,0 +1,3 @@
+display_name: "Kyc Rules"
+short_description: "Apply the firm's KYC/AML rules grid to a parsed onboarding record — assign a risk rating, list every rule outcome wit..."
+default_prompt: "Use the kyc-rules workflow."

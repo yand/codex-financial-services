@@ -1,0 +1,3 @@
+display_name: "Command Lseg Research Equity"
+short_description: "Codex adapter for Claude slash command /research-equity from lseg. Use when the user types /research-equity or asks t..."
+default_prompt: "Use the command-lseg-research-equity workflow."

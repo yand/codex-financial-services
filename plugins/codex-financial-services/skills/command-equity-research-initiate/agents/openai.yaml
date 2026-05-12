@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Initiate"
+short_description: "Codex adapter for Claude slash command /initiate from equity-research. Use when the user types /initiate or asks to c..."
+default_prompt: "Use the command-equity-research-initiate workflow."

@@ -1,0 +1,3 @@
+display_name: "Datapack Builder"
+short_description: "Build professional financial services data packs from various sources including CIMs, offering memorandums, SEC filin..."
+default_prompt: "Use the datapack-builder workflow."

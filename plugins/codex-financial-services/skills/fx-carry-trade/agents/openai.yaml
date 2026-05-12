@@ -1,0 +1,3 @@
+display_name: "Fx Carry Trade"
+short_description: "Evaluate FX carry trade opportunities by combining spot rates, forward points, interest rate differentials, volatilit..."
+default_prompt: "Use the fx-carry-trade workflow."

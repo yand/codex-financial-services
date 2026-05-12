@@ -1,0 +1,3 @@
+display_name: "Command Investment Banking Merger Model"
+short_description: "Codex adapter for Claude slash command /merger-model from investment-banking. Use when the user types /merger-model o..."
+default_prompt: "Use the command-investment-banking-merger-model workflow."

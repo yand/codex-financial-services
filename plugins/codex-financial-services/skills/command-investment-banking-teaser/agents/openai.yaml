@@ -1,0 +1,3 @@
+display_name: "Command Investment Banking Teaser"
+short_description: "Codex adapter for Claude slash command /teaser from investment-banking. Use when the user types /teaser or asks to dr..."
+default_prompt: "Use the command-investment-banking-teaser workflow."

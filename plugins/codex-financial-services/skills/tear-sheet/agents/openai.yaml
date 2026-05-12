@@ -1,0 +1,3 @@
+display_name: "Tear Sheet"
+short_description: "Generate professional company tear sheets using S&P Capital IQ data via the Kensho LLM-ready API MCP server. Use this..."
+default_prompt: "Use the tear-sheet workflow."

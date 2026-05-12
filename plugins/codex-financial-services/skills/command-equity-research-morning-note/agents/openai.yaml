@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Morning Note"
+short_description: "Codex adapter for Claude slash command /morning-note from equity-research. Use when the user types /morning-note or a..."
+default_prompt: "Use the command-equity-research-morning-note workflow."

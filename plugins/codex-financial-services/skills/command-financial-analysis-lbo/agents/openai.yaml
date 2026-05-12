@@ -1,0 +1,3 @@
+display_name: "Command Financial Analysis Lbo"
+short_description: "Codex adapter for Claude slash command /lbo from financial-analysis. Use when the user types /lbo or asks to build an..."
+default_prompt: "Use the command-financial-analysis-lbo workflow."

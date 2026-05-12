@@ -4,6 +4,8 @@ Reference agents, skills, and data connectors for the financial-services workflo
 
 Everything here is available **two ways from one source**: install it as a [Claude Cowork](https://claude.com/product/cowork) plugin, or deploy it through the [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) behind your own workflow engine. Same system prompt, same skills — you choose where it runs.
 
+This fork also includes a **Codex adapter** for publishing as `codex-financial-services`. The generated Codex plugin lives at [`plugins/codex-financial-services`](./plugins/codex-financial-services), with marketplace metadata at [`.agents/plugins/marketplace.json`](./.agents/plugins/marketplace.json).
+
 > [!IMPORTANT]
 > Nothing in this repository constitutes investment, legal, tax, or accounting advice. These agents draft analyst work product — models, memos, research notes, reconciliations — for review by a qualified professional. They do not make investment recommendations, execute transactions, bind risk, post to a ledger, or approve onboarding; every output is staged for human sign-off. You are responsible for verifying outputs and for compliance with the laws and regulations that apply to your firm.
 
@@ -46,6 +48,24 @@ scripts/                       # deploy-managed-agent.sh · check.py · validate
 ```
 
 ## Getting Started
+
+### Codex
+
+This adapter packages the Claude/Cowork financial-services resources as a Codex plugin:
+
+- Plugin manifest: [`plugins/codex-financial-services/.codex-plugin/plugin.json`](./plugins/codex-financial-services/.codex-plugin/plugin.json)
+- Generated skills: [`plugins/codex-financial-services/skills/`](./plugins/codex-financial-services/skills)
+- Optional MCP servers: [`plugins/codex-financial-services/.mcp.json`](./plugins/codex-financial-services/.mcp.json)
+- Repo marketplace metadata: [`.agents/plugins/marketplace.json`](./.agents/plugins/marketplace.json)
+
+Regenerate and validate the adapter after upstream changes:
+
+```bash
+python3 scripts/convert_claude_to_codex.py
+python3 scripts/check_codex_adapter.py
+```
+
+Commercial data connectors are optional in Codex. If a provider such as FactSet, LSEG, Morningstar, PitchBook, S&P Global, or Daloopa is not configured, the adapted skills fall back to user-provided files, public sources, or an explicit missing-data note.
 
 ### Cowork
 

@@ -1,0 +1,3 @@
+display_name: "Unit Economics"
+short_description: "Codex adapter skill for unit-economics."
+default_prompt: "Use the unit-economics workflow."

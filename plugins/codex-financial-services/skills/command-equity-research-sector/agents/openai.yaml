@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Sector"
+short_description: "Codex adapter for Claude slash command /sector from equity-research. Use when the user types /sector or asks to creat..."
+default_prompt: "Use the command-equity-research-sector workflow."

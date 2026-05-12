@@ -1,0 +1,3 @@
+display_name: "Command Lseg Macro Rates"
+short_description: "Codex adapter for Claude slash command /macro-rates from lseg. Use when the user types /macro-rates or asks to build ..."
+default_prompt: "Use the command-lseg-macro-rates workflow."

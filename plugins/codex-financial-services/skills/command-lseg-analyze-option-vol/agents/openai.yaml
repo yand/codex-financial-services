@@ -1,0 +1,3 @@
+display_name: "Command Lseg Analyze Option Vol"
+short_description: "Codex adapter for Claude slash command /analyze-option-vol from lseg. Use when the user types /analyze-option-vol or ..."
+default_prompt: "Use the command-lseg-analyze-option-vol workflow."

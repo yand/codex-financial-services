@@ -1,0 +1,3 @@
+display_name: "Gl Recon"
+short_description: "Reconcile general ledger to subledger for a trade date or period — match at the position or transaction level, surfac..."
+default_prompt: "Use the gl-recon workflow."

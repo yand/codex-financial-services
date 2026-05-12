@@ -1,0 +1,3 @@
+display_name: "Kyc Doc Parse"
+short_description: "Parse an investor or client onboarding packet into structured KYC fields — identity, ownership, control, source of fu..."
+default_prompt: "Use the kyc-doc-parse workflow."

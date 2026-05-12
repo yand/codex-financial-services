@@ -1,0 +1,3 @@
+display_name: "Pitch Deck"
+short_description: "Populates investment banking pitch deck templates with data from source files. Use when: user provides a PowerPoint t..."
+default_prompt: "Use the pitch-deck workflow."

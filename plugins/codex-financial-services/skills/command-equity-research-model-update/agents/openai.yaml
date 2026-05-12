@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Model Update"
+short_description: "Codex adapter for Claude slash command /model-update from equity-research. Use when the user types /model-update or a..."
+default_prompt: "Use the command-equity-research-model-update workflow."

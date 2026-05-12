@@ -1,0 +1,3 @@
+display_name: "Accrual Schedule"
+short_description: "Build the period-end accrual schedule — for each accrual, compute the entry, cite the support, and draft the JE. Use ..."
+default_prompt: "Use the accrual-schedule workflow."

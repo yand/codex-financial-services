@@ -1,0 +1,3 @@
+display_name: "Fixed Income Portfolio"
+short_description: "Review fixed income portfolios by pricing multiple bonds, retrieving reference data, analyzing cashflows, and running..."
+default_prompt: "Use the fixed-income-portfolio workflow."

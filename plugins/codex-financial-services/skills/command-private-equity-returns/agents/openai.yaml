@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Returns"
+short_description: "Codex adapter for Claude slash command /returns from private-equity. Use when the user types /returns or asks to buil..."
+default_prompt: "Use the command-private-equity-returns workflow."

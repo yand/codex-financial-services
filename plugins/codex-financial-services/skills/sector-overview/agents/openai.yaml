@@ -1,0 +1,3 @@
+display_name: "Sector Overview"
+short_description: "Codex adapter skill for sector-overview."
+default_prompt: "Use the sector-overview workflow."

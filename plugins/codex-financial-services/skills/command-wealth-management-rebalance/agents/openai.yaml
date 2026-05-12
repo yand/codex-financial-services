@@ -1,0 +1,3 @@
+display_name: "Command Wealth Management Rebalance"
+short_description: "Codex adapter for Claude slash command /rebalance from wealth-management. Use when the user types /rebalance or asks ..."
+default_prompt: "Use the command-wealth-management-rebalance workflow."

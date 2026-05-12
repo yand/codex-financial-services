@@ -1,0 +1,3 @@
+display_name: "Agent Earnings Reviewer"
+short_description: "Codex adapter for the Claude Cowork earnings-reviewer agent. Processes an earnings event end to end — reads the call ..."
+default_prompt: "Use the agent-earnings-reviewer workflow."

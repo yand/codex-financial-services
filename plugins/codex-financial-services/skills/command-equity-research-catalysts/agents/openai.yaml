@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Catalysts"
+short_description: "Codex adapter for Claude slash command /catalysts from equity-research. Use when the user types /catalysts or asks to..."
+default_prompt: "Use the command-equity-research-catalysts workflow."

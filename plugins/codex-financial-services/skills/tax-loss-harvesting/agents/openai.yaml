@@ -1,0 +1,3 @@
+display_name: "Tax Loss Harvesting"
+short_description: "Codex adapter skill for tax-loss-harvesting."
+default_prompt: "Use the tax-loss-harvesting workflow."

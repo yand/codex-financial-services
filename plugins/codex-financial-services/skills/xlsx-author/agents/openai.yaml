@@ -1,0 +1,3 @@
+display_name: "Xlsx Author"
+short_description: "Produce a .xlsx file on disk (headless) instead of driving a live Excel workbook — for managed-agent sessions with no..."
+default_prompt: "Use the xlsx-author workflow."

@@ -1,0 +1,3 @@
+display_name: "Agent Meeting Prep Agent"
+short_description: "Codex adapter for the Claude Cowork meeting-prep-agent agent. Builds a briefing pack before a client or prospect meet..."
+default_prompt: "Use the agent-meeting-prep-agent workflow."

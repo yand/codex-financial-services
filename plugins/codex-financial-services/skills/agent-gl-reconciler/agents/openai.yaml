@@ -1,0 +1,3 @@
+display_name: "Agent Gl Reconciler"
+short_description: "Codex adapter for the Claude Cowork gl-reconciler agent. Reconciles general ledger to subledger across asset classes ..."
+default_prompt: "Use the agent-gl-reconciler workflow."

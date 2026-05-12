@@ -1,0 +1,3 @@
+display_name: "Initiating Coverage"
+short_description: "Create institutional-quality equity research initiation reports through a 5-task workflow. Tasks must be executed ind..."
+default_prompt: "Use the initiating-coverage workflow."

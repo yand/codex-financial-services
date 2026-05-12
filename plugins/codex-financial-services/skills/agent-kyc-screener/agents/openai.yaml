@@ -1,0 +1,3 @@
+display_name: "Agent Kyc Screener"
+short_description: "Codex adapter for the Claude Cowork kyc-screener agent. Parses an onboarding document packet, runs the firm's KYC/AML..."
+default_prompt: "Use the agent-kyc-screener workflow."

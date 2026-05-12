@@ -1,0 +1,3 @@
+display_name: "Command Wealth Management Tlh"
+short_description: "Codex adapter for Claude slash command /tlh from wealth-management. Use when the user types /tlh or asks to identify ..."
+default_prompt: "Use the command-wealth-management-tlh workflow."

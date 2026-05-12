@@ -1,0 +1,3 @@
+display_name: "Command Investment Banking Process Letter"
+short_description: "Codex adapter for Claude slash command /process-letter from investment-banking. Use when the user types /process-lett..."
+default_prompt: "Use the command-investment-banking-process-letter workflow."

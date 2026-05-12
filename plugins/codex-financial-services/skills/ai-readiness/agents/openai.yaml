@@ -1,0 +1,3 @@
+display_name: "Ai Readiness"
+short_description: "Codex adapter skill for ai-readiness."
+default_prompt: "Use the ai-readiness workflow."

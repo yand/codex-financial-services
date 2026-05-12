@@ -1,0 +1,3 @@
+display_name: "Command Lseg Review Fi Portfolio"
+short_description: "Codex adapter for Claude slash command /review-fi-portfolio from lseg. Use when the user types /review-fi-portfolio o..."
+default_prompt: "Use the command-lseg-review-fi-portfolio workflow."

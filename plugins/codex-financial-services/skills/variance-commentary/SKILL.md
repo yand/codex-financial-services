@@ -1,0 +1,41 @@
+---
+name: "variance-commentary"
+description: "Write flux commentary for every P&L and balance-sheet line over threshold — current vs prior period and vs budget, with the driver explained from underlying activity. Use for the month-end close package and management reporting."
+---
+
+## Codex Adapter Notes
+
+- This skill was adapted from Anthropic's Claude/Cowork financial-services repo.
+- Use available Codex tools, local files, web research, spreadsheets, documents, and presentations to perform the workflow.
+- Treat referenced commercial MCP providers as optional. If the provider is not configured, ask for user-provided data or use public sources where suitable.
+- Claude-specific slash command, agent, hook, and tool names are preserved as source context; map them to equivalent Codex behavior rather than requiring Claude runtime features.
+
+# Variance commentary
+
+Given current-period actuals, prior-period actuals, and budget for the same scope, produce a commentary table.
+
+## Threshold
+
+Flag a line for commentary if **either** is true:
+
+- Absolute variance ≥ the firm's materiality threshold (use the provided value; default 5% of the line or a fixed floor, whichever is greater)
+- The line is on the "always comment" list (revenue, headcount cost, cash)
+
+## For each flagged line
+
+| Column | Content |
+|---|---|
+| **Line** | Account or caption |
+| **Current / Prior / Budget** | The three values |
+| **Δ vs prior** and **Δ vs budget** | Amount and % |
+| **Driver** | One sentence explaining the movement from underlying activity — not a restatement of the number |
+
+A driver explains *why*, not *what*: "Cloud spend up $1.2M on incremental GPU reservations for the May launch" — not "Cloud spend increased $1.2M (18%)."
+
+## Sourcing the driver
+
+Look at the activity behind the line (journal-source breakdown, vendor mix, headcount delta, volume × rate) via the internal-gl MCP. If the driver isn't clear from the data, write "driver unclear — flag for controller" rather than inventing one.
+
+## Output
+
+The commentary table plus a short narrative (3–5 sentences) summarizing the period's biggest movers.

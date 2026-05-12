@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Dd Prep"
+short_description: "Codex adapter for Claude slash command /dd-prep from private-equity. Use when the user types /dd-prep or asks to prep..."
+default_prompt: "Use the command-private-equity-dd-prep workflow."

@@ -1,0 +1,3 @@
+display_name: "Agent Valuation Reviewer"
+short_description: "Codex adapter for the Claude Cowork valuation-reviewer agent. Ingests GP valuation packages for a fund, runs them thr..."
+default_prompt: "Use the agent-valuation-reviewer workflow."

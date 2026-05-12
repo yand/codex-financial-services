@@ -1,0 +1,44 @@
+{
+  "name": "codex-financial-services",
+  "version": "0.1.0",
+  "description": "Codex adapter for Anthropic's Financial Services Claude/Cowork plugin collection: financial modeling, investment banking, equity research, private equity, wealth management, fund admin, operations, and partner financial data workflows.",
+  "author": {
+    "name": "Codex adapter maintainers",
+    "url": "https://github.com/anthropics/financial-services"
+  },
+  "homepage": "https://github.com/anthropics/financial-services",
+  "repository": "https://github.com/anthropics/financial-services",
+  "license": "Apache-2.0",
+  "keywords": [
+    "codex",
+    "financial-services",
+    "investment-banking",
+    "equity-research",
+    "private-equity",
+    "wealth-management",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Codex Financial Services",
+    "shortDescription": "Financial modeling and markets workflows for Codex",
+    "longDescription": "Codex adapter for Anthropic's Financial Services Claude/Cowork plugin collection: financial modeling, investment banking, equity research, private equity, wealth management, fund admin, operations, and partner financial data workflows.",
+    "developerName": "Codex adapter maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/anthropics/financial-services",
+    "privacyPolicyURL": "https://www.anthropic.com/legal/privacy",
+    "termsOfServiceURL": "https://www.anthropic.com/legal/consumer-terms",
+    "defaultPrompt": [
+      "Build a DCF model from my financial inputs.",
+      "Run comps analysis for this public company.",
+      "Draft an investment banking pitch workflow."
+    ],
+    "brandColor": "#111827"
+  }
+}

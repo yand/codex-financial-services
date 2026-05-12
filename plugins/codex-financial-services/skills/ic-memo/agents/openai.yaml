@@ -1,0 +1,3 @@
+display_name: "Ic Memo"
+short_description: "Codex adapter skill for ic-memo."
+default_prompt: "Use the ic-memo workflow."

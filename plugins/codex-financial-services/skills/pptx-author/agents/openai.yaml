@@ -1,0 +1,3 @@
+display_name: "Pptx Author"
+short_description: "Produce a .pptx file on disk (headless) instead of driving a live PowerPoint document — for managed-agent sessions wi..."
+default_prompt: "Use the pptx-author workflow."

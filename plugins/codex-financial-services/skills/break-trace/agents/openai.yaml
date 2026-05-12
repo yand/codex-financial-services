@@ -1,0 +1,3 @@
+display_name: "Break Trace"
+short_description: "Root-cause a reconciliation break to its source transaction or posting — follow the audit trail from the break row ba..."
+default_prompt: "Use the break-trace workflow."

@@ -1,0 +1,3 @@
+display_name: "Roll Forward"
+short_description: "Build a roll-forward schedule for a balance-sheet account — beginning balance plus activity less reversals equals end..."
+default_prompt: "Use the roll-forward workflow."

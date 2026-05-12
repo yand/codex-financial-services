@@ -1,0 +1,3 @@
+display_name: "Ib Check Deck"
+short_description: "Investment banking presentation quality checker. Reviews a pitch deck or client-ready presentation for (1) number con..."
+default_prompt: "Use the ib-check-deck workflow."

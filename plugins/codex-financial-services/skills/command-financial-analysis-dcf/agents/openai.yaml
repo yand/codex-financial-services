@@ -1,0 +1,3 @@
+display_name: "Command Financial Analysis Dcf"
+short_description: "Codex adapter for Claude slash command /dcf from financial-analysis. Use when the user types /dcf or asks to build a ..."
+default_prompt: "Use the command-financial-analysis-dcf workflow."

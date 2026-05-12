@@ -1,0 +1,3 @@
+display_name: "Command Wealth Management Financial Plan"
+short_description: "Codex adapter for Claude slash command /financial-plan from wealth-management. Use when the user types /financial-pla..."
+default_prompt: "Use the command-wealth-management-financial-plan workflow."

@@ -1,0 +1,3 @@
+display_name: "Bond Relative Value"
+short_description: "Perform relative value analysis on bonds by combining pricing, yield curve context, credit spreads, and scenario stre..."
+default_prompt: "Use the bond-relative-value workflow."

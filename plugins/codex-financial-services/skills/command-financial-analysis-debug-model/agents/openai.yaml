@@ -1,0 +1,3 @@
+display_name: "Command Financial Analysis Debug Model"
+short_description: "Codex adapter for Claude slash command /debug-model from financial-analysis. Use when the user types /debug-model or ..."
+default_prompt: "Use the command-financial-analysis-debug-model workflow."

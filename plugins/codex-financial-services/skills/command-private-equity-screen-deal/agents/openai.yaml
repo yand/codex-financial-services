@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Screen Deal"
+short_description: "Codex adapter for Claude slash command /screen-deal from private-equity. Use when the user types /screen-deal or asks..."
+default_prompt: "Use the command-private-equity-screen-deal workflow."

@@ -1,0 +1,3 @@
+display_name: "Thesis Tracker"
+short_description: "Codex adapter skill for thesis-tracker."
+default_prompt: "Use the thesis-tracker workflow."

@@ -1,0 +1,3 @@
+display_name: "Command Wealth Management Proposal"
+short_description: "Codex adapter for Claude slash command /proposal from wealth-management. Use when the user types /proposal or asks to..."
+default_prompt: "Use the command-wealth-management-proposal workflow."

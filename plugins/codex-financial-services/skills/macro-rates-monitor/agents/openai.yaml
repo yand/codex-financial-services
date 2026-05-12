@@ -1,0 +1,3 @@
+display_name: "Macro Rates Monitor"
+short_description: "Build macroeconomic and rates dashboards combining macro indicators, yield curves, inflation breakevens, and swap rat..."
+default_prompt: "Use the macro-rates-monitor workflow."

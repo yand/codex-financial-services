@@ -1,0 +1,3 @@
+display_name: "Competitive Analysis"
+short_description: "Framework for building competitive landscape decks — market positioning, competitor deep-dives, comparative analysis,..."
+default_prompt: "Use the competitive-analysis workflow."

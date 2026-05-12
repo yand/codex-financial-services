@@ -1,0 +1,3 @@
+display_name: "Idea Generation"
+short_description: "Codex adapter skill for idea-generation."
+default_prompt: "Use the idea-generation workflow."

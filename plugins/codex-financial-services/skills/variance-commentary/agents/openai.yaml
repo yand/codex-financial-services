@@ -1,0 +1,3 @@
+display_name: "Variance Commentary"
+short_description: "Write flux commentary for every P&L and balance-sheet line over threshold — current vs prior period and vs budget, wi..."
+default_prompt: "Use the variance-commentary workflow."

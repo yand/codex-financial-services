@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Unit Economics"
+short_description: "Codex adapter for Claude slash command /unit-economics from private-equity. Use when the user types /unit-economics o..."
+default_prompt: "Use the command-private-equity-unit-economics workflow."

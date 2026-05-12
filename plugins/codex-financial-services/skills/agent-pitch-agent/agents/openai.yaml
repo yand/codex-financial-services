@@ -1,0 +1,3 @@
+display_name: "Agent Pitch Agent"
+short_description: "Codex adapter for the Claude Cowork pitch-agent agent. End-to-end investment banking pitch agent. Given a target comp..."
+default_prompt: "Use the agent-pitch-agent workflow."

@@ -1,0 +1,3 @@
+display_name: "Command Equity Research Earnings Preview"
+short_description: "Codex adapter for Claude slash command /earnings-preview from equity-research. Use when the user types /earnings-prev..."
+default_prompt: "Use the command-equity-research-earnings-preview workflow."

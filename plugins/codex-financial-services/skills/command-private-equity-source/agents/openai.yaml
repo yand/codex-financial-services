@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Source"
+short_description: "Codex adapter for Claude slash command /source from private-equity. Use when the user types /source or asks to source..."
+default_prompt: "Use the command-private-equity-source workflow."

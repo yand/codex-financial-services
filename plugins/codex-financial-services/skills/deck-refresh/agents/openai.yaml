@@ -1,0 +1,3 @@
+display_name: "Deck Refresh"
+short_description: "Updates a presentation with new numbers — quarterly refreshes, earnings updates, comp rolls, rebased market data. Use..."
+default_prompt: "Use the deck-refresh workflow."

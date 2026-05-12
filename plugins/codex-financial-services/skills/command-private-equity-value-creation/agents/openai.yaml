@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Value Creation"
+short_description: "Codex adapter for Claude slash command /value-creation from private-equity. Use when the user types /value-creation o..."
+default_prompt: "Use the command-private-equity-value-creation workflow."

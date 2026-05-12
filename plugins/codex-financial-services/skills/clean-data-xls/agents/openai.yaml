@@ -1,0 +1,3 @@
+display_name: "Clean Data Xls"
+short_description: "Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardi..."
+default_prompt: "Use the clean-data-xls workflow."

@@ -1,0 +1,3 @@
+display_name: "Dcf Model"
+short_description: "Real DCF (Discounted Cash Flow) model creation for equity valuation. Retrieves financial data from SEC filings and an..."
+default_prompt: "Use the dcf-model workflow."

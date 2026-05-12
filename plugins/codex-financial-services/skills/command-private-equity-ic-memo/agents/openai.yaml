@@ -1,0 +1,3 @@
+display_name: "Command Private Equity Ic Memo"
+short_description: "Codex adapter for Claude slash command /ic-memo from private-equity. Use when the user types /ic-memo or asks to draf..."
+default_prompt: "Use the command-private-equity-ic-memo workflow."

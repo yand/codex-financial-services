@@ -1,0 +1,3 @@
+display_name: "Funding Digest"
+short_description: "Generate a polished one-page PowerPoint slide summarizing key takeaways from recent funding rounds and notable capita..."
+default_prompt: "Use the funding-digest workflow."

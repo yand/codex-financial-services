@@ -1,0 +1,3 @@
+display_name: "3 Statement Model"
+short_description: "Complete, populate and fill out 3-statement financial model templates (Income Statement, Balance Sheet, Cash Flow Sta..."
+default_prompt: "Use the 3-statement-model workflow."

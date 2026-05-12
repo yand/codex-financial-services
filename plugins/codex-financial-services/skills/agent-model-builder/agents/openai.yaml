@@ -1,0 +1,3 @@
+display_name: "Agent Model Builder"
+short_description: "Codex adapter for the Claude Cowork model-builder agent. Builds DCF, LBO, three-statement, and trading-comps models l..."
+default_prompt: "Use the agent-model-builder workflow."

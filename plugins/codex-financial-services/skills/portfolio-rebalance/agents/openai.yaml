@@ -1,0 +1,3 @@
+display_name: "Portfolio Rebalance"
+short_description: "Codex adapter skill for portfolio-rebalance."
+default_prompt: "Use the portfolio-rebalance workflow."

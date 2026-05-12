@@ -1,0 +1,3 @@
+display_name: "Command Lseg Analyze Bond Rv"
+short_description: "Codex adapter for Claude slash command /analyze-bond-rv from lseg. Use when the user types /analyze-bond-rv or asks t..."
+default_prompt: "Use the command-lseg-analyze-bond-rv workflow."

@@ -1,0 +1,3 @@
+display_name: "Command Financial Analysis 3 Statement Model"
+short_description: "Codex adapter for Claude slash command /3-statement-model from financial-analysis. Use when the user types /3-stateme..."
+default_prompt: "Use the command-financial-analysis-3-statement-model workflow."
