@@ -28,7 +28,6 @@
     "category": "Productivity",
     "capabilities": [
       "Interactive",
-      "Read",
       "Write"
     ],
     "websiteURL": "https://github.com/anthropics/financial-services",

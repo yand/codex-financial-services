@@ -274,7 +274,7 @@ def write_plugin_manifest() -> None:
             "longDescription": PLUGIN_DESCRIPTION,
             "developerName": "Codex adapter maintainers",
             "category": "Productivity",
-            "capabilities": ["Interactive", "Read", "Write"],
+            "capabilities": ["Interactive", "Write"],
             "websiteURL": "https://github.com/anthropics/financial-services",
             "privacyPolicyURL": "https://www.anthropic.com/legal/privacy",
             "termsOfServiceURL": "https://www.anthropic.com/legal/consumer-terms",
