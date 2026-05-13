@@ -1,0 +1,3 @@
+display_name: "Codex Financial Services"
+short_description: "Router for generated financial-services workflows including DCF, comps, LBO, equity research, IC memos, KYC, and fund..."
+default_prompt: "Use the codex-financial-services workflow."

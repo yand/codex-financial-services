@@ -11,7 +11,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "plugins" / "codex-financial-services"
-SKILLS_OUT = OUT / "skills"
+SKILLS_OUT = OUT / "resources" / "skills"
+ACTIVE_SKILLS_OUT = OUT / "skills"
 
 SOURCE_PLUGIN_ROOTS = [
     ROOT / "plugins" / "vertical-plugins",
@@ -34,6 +35,43 @@ OPTIONAL_CONNECTOR_NOTE = """\
 - Use available Codex tools, local files, web research, spreadsheets, documents, and presentations to perform the workflow.
 - Treat referenced commercial MCP providers as optional. If the provider is not configured, ask for user-provided data or use public sources where suitable.
 - Claude-specific slash command, agent, hook, and tool names are preserved as source context; map them to equivalent Codex behavior rather than requiring Claude runtime features.
+"""
+
+ROUTER_SKILL = """\
+---
+name: "codex-financial-services"
+description: "Use this when the user explicitly asks for the codex-financial-services adapter, Anthropic financial-services repo workflows, DCF, comps, LBO, 3-statement models, investment banking pitch workflows, equity research reports, private equity IC memos, fund-admin workflows, KYC screening, GL reconciliation, or Claude/Cowork financial-services style commands such as /dcf, /comps, /earnings, /ic-memo, /lbo, or /model-update. Do not use for broad personal investment advice or vague investment help unless the user asks for one of these workflows."
+---
+
+# Codex Financial Services
+
+This is the active router for the generated Codex adapter. Keep the first response fast and bounded.
+
+## First Response Rule
+
+Before reading any large generated workflow file or starting analysis, identify the exact workflow and required input. If the user has not provided a company/ticker, source files, and requested artifact, ask a concise clarification question instead of planning a full model.
+
+Do not silently start a DCF, comps, pitch, or research workflow from a vague prompt. Do not read `resources/skills/dcf-model/SKILL.md`, `resources/skills/comps-analysis/SKILL.md`, or other large files until the user has provided the target company/ticker and confirmed the artifact they want.
+
+For general investment questions, explain that this adapter is for analyst workflows and ask whether they want a DCF, comps, research note, IC memo, or portfolio review. Do not provide personal financial advice.
+
+Generated workflow resources live under:
+
+`resources/skills`
+
+Prefer command adapters for first-pass workflow routing because they are shorter:
+
+- DCF: start with `resources/skills/command-financial-analysis-dcf/SKILL.md`; read `resources/skills/dcf-model/SKILL.md` only after inputs are known.
+- Comps: start with `resources/skills/command-financial-analysis-comps/SKILL.md`; read `resources/skills/comps-analysis/SKILL.md` only after peer-set/data needs are known.
+- LBO: `resources/skills/command-financial-analysis-lbo/SKILL.md`
+- 3-statement model: `resources/skills/command-financial-analysis-3-statement-model/SKILL.md`
+- Pitch agent: `resources/skills/agent-pitch-agent/SKILL.md`
+- Earnings: `resources/skills/command-equity-research-earnings/SKILL.md`
+- IC memo: `resources/skills/command-private-equity-ic-memo/SKILL.md`
+- GL reconciliation: `resources/skills/agent-gl-reconciler/SKILL.md`
+- KYC: `resources/skills/agent-kyc-screener/SKILL.md`
+
+Treat commercial MCP connectors as optional. If a provider is unavailable, ask for user-provided files or use public sources where suitable.
 """
 
 
@@ -254,8 +292,8 @@ def write_plugin_manifest() -> None:
             "name": "Codex adapter maintainers",
             "url": "https://github.com/anthropics/financial-services",
         },
-        "homepage": "https://github.com/anthropics/financial-services",
-        "repository": "https://github.com/anthropics/financial-services",
+        "homepage": "https://github.com/yand/codex-financial-services",
+        "repository": "https://github.com/yand/codex-financial-services",
         "license": "Apache-2.0",
         "keywords": [
             "codex",
@@ -275,7 +313,7 @@ def write_plugin_manifest() -> None:
             "developerName": "Codex adapter maintainers",
             "category": "Productivity",
             "capabilities": ["Interactive", "Write"],
-            "websiteURL": "https://github.com/anthropics/financial-services",
+            "websiteURL": "https://github.com/yand/codex-financial-services",
             "privacyPolicyURL": "https://www.anthropic.com/legal/privacy",
             "termsOfServiceURL": "https://www.anthropic.com/legal/consumer-terms",
             "defaultPrompt": [
@@ -325,6 +363,8 @@ def write_index(converted: list[dict[str, str]]) -> None:
         "",
         "Generated from Anthropic's Claude/Cowork financial-services plugin sources.",
         "",
+        "The plugin exposes one active Codex router skill. Converted Claude skills, commands, and agents are stored under `resources/skills` and loaded on demand by the router.",
+        "",
         "## Contents",
         "",
     ]
@@ -344,6 +384,7 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     SKILLS_OUT.mkdir(parents=True)
+    ACTIVE_SKILLS_OUT.mkdir(parents=True)
     converted: list[dict[str, str]] = []
     converted.extend(convert_source_skills())
     converted.extend(convert_commands())
@@ -354,6 +395,14 @@ def main() -> None:
     write_plugin_manifest()
     write_marketplace()
     write_index(converted)
+    router_dir = ACTIVE_SKILLS_OUT / "codex-financial-services"
+    router_dir.mkdir(parents=True, exist_ok=True)
+    (router_dir / "SKILL.md").write_text(ROUTER_SKILL, encoding="utf-8")
+    write_openai_yaml(
+        router_dir,
+        "codex-financial-services",
+        "Router for generated financial-services workflows including DCF, comps, LBO, equity research, IC memos, KYC, and fund-admin tasks.",
+    )
     print(
         f"Generated {len(converted)} Codex adapters in "
         f"{OUT.relative_to(ROOT)}"

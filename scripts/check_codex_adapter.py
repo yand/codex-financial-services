@@ -61,10 +61,10 @@ def frontmatter(text: str) -> dict[str, str]:
 def check_skills() -> None:
     skills_root = PLUGIN / "skills"
     if not skills_root.exists():
-        fail("missing generated skills directory")
+        fail("missing active skills directory")
     skill_files = sorted(skills_root.glob("*/SKILL.md"))
-    if not skill_files:
-        fail("no generated skills found")
+    if [p.parent.name for p in skill_files] != ["codex-financial-services"]:
+        fail("active skills directory must contain only the codex-financial-services router")
 
     names: set[str] = set()
     for path in skill_files:
@@ -76,9 +76,28 @@ def check_skills() -> None:
         if not description:
             fail(f"{path.relative_to(ROOT)} missing frontmatter description")
         if name in names:
-            fail(f"duplicate generated skill name: {name}")
+            fail(f"duplicate active skill name: {name}")
         names.add(name)
-    print(f"Validated {len(skill_files)} generated Codex skills")
+
+    resources_root = PLUGIN / "resources" / "skills"
+    resource_files = sorted(resources_root.glob("*/SKILL.md"))
+    if len(resource_files) < 100:
+        fail(f"expected generated resource skills under resources/skills, found {len(resource_files)}")
+
+    resource_names: set[str] = set()
+    for path in resource_files:
+        fm = frontmatter(path.read_text(encoding="utf-8"))
+        name = fm.get("name")
+        description = fm.get("description")
+        if not name:
+            fail(f"{path.relative_to(ROOT)} missing frontmatter name")
+        if not description:
+            fail(f"{path.relative_to(ROOT)} missing frontmatter description")
+        if name in resource_names:
+            fail(f"duplicate generated resource skill name: {name}")
+        resource_names.add(name)
+
+    print(f"Validated {len(skill_files)} active skill and {len(resource_files)} generated resource skills")
 
 
 def check_mcp() -> None:

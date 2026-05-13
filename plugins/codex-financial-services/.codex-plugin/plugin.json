@@ -6,8 +6,8 @@
     "name": "Codex adapter maintainers",
     "url": "https://github.com/anthropics/financial-services"
   },
-  "homepage": "https://github.com/anthropics/financial-services",
-  "repository": "https://github.com/anthropics/financial-services",
+  "homepage": "https://github.com/yand/codex-financial-services",
+  "repository": "https://github.com/yand/codex-financial-services",
   "license": "Apache-2.0",
   "keywords": [
     "codex",
@@ -30,7 +30,7 @@
       "Interactive",
       "Write"
     ],
-    "websiteURL": "https://github.com/anthropics/financial-services",
+    "websiteURL": "https://github.com/yand/codex-financial-services",
     "privacyPolicyURL": "https://www.anthropic.com/legal/privacy",
     "termsOfServiceURL": "https://www.anthropic.com/legal/consumer-terms",
     "defaultPrompt": [

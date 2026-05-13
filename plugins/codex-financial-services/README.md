@@ -2,6 +2,8 @@
 
 Generated from Anthropic's Claude/Cowork financial-services plugin sources.
 
+The plugin exposes one active Codex router skill. Converted Claude skills, commands, and agents are stored under `resources/skills` and loaded on demand by the router.
+
 ## Contents
 
 - 10 agent adapters
